@@ -1,0 +1,112 @@
+PseudoCode Challenge!!
+
+=================
+NEWTON SECOND LAW
+=================
+Secara matematis hukum II Newton dirumuskan sebagai berikut: ΣF = m x a
+ΣF = resultan gaya (Newton)
+m = massa benda (kg)
+a = percepatan benda (m/s2)
+Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk menghitung resultan gaya pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
+___________________________________________________________
+-- Algorithm --
+1. deklarasikan variable massa, percepatan dan gaya
+2. set rumus
+3. input nilai kedalalam variable massa dan percepatan, 600kg ke dalam massa dan 2 m/s2 ke dalam percepatan
+4. hitung massa dikali percepatan
+5. input hasil step 4 ke dalam gaya
+6. tampilkan gaya. 
+___________________________________________________________
+-- Pseudocode --
+STORE "massa" with any value
+STORE "acceleration" with any value
+STORE "Force" without value
+
+ADD "600 kg" to "massa"
+ADD "2 m/s2" to "acceleration"
+CALCULATE "massa" times "acceleration"
+ADD result from CALCULATE to "Force"
+DISPLAY "Force"
+
+================
+  TAHUN KABISAT
+================
+Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari berarti tahun tersebut merupakan tahun kabisat.
+Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+  Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+  Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+Buatlah algoritma & pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+___________________________________________________________
+-- Algorithm --
+1. pilih tahun secara random atau sesuai pilihanmu.
+2. bagi tahun tersebut dengan angka 4
+3. bagi tahun tersebut dengan angka 100
+4. bagi tahun tersebut dengan angka 400
+5. jika sisa hasil bagi step 2 adalah tidak sama dengan 0,langsung ke step 9, jika tidak lanjut ke step 6.
+6. jika sisa hasil bagi step 3 sama dengan nol maka lanjut ke step 7, jika tidak lanjut ke step 8.
+7. jika sisa hasil bagi step 4 sama dengan nol, lanjut step 8, jika tidak ke step 9. 
+8. tahun tersebut merupakan tahun kabisat.
+9. tahun tersebut bukan tahun kabisat.
+___________________________________________________________
+-- PseudoCode --
+STORE "Year" with any value
+IF "Year" modulus 4 EQUAL 0 and "Year" modulus 100 EQUAL NOT 0 THAN
+  PRINT "This is Kabisat Year"
+IF ELSE "Year" modulus 4 EQUAL 0 and "Year" modulus 100 and 400 EQUAL 0 THAN
+  PRINT "This is Kabisat Year"
+ELSE 
+  PRINT "This is NOT Kabisat Year"
+
+DISPLAY "Year"
+
+================
+  LAUNDRY DAY 
+================
+Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma & pseudocode perulangan!
+___________________________________________________________
+-- Algorithm --
+1. Siapkan pakaian kotor yang akan dicuci
+2. masukan satu per satu pakaian kotor ke dalam mesin cuci hingga tersisa 0
+3. masukan air ke dalam mesin cuci
+4. masukan deterjen ke dalam mesin cuci 
+5. hidupkan mesin cuci
+6. tunggu hingga selesai
+7. mencuci selesai
+___________________________________________________________
+-- pseudocode --
+STORE "Cloth" to Zero
+STORE "ClothAll" to 20
+STORE "WashingMachine" without value
+WHILE "Cloth" < "ClothAll" THAN
+  "WashingMachine" EQUAL PLUS "Cloth"
+  ADD ONE to Cloth
+END WHILE
+
+DISPLAY "Finish"
+
+================
+  PERIKSA KUKU
+================
+Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling kelas. Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan menghukum siswa/siswi tersebut, jika tidak guru akan memuji siswa/siswi tersebut.
+___________________________________________________________
+-- Algorithm --
+1. kumpulkan dan bariskan siswa siswa.
+2. guru berkeliling memeriksa setiap siswa
+3. Jika pada step 2 ada siswa yang berkuku panjnag maka lanjut ke step 4, jika tidak langsung ke step 5.
+4. siswa tersebut akan diberikan hukuman oleh guru
+5. siswa tersebut akan diberi pujian oleh guru.
+___________________________________________________________
+-- PseudoCode --
+SET "Student" to Zero
+SET "StudentAll" to 40
+WHILE "Student" < "StudentAll" THAN
+  IF "Children" has "Long Nail" THAN
+    ACTION "Teacher punish Children"
+  ELSE 
+    ACTION "Teacher give eward to Children"
+  END IF
+END WHILE
+
+DISPLAY "Finish"
